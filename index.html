@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Publisher</title>
+  <style>
+    :root {
+      --bg: #f7f3ea;
+      --panel: #fffdf8;
+      --ink: #1b241f;
+      --muted: #5d6a61;
+      --border: #ddd2bd;
+      --accent: #b85a27;
+      --accent-2: #1f6c5a;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #faf6ec 0%, var(--bg) 100%);
+    }
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 32px auto;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 14px 40px rgba(41, 31, 18, 0.08);
+    }
+    h1, h2 { margin-top: 0; }
+    h1 { color: var(--accent); }
+    p, li { line-height: 1.6; }
+    .muted { color: var(--muted); }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      background: var(--accent);
+    }
+    a.secondary {
+      background: var(--accent-2);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Social Publisher</h1>
+    <p class="muted">Official API-based account connection and video upload workflow.</p>
+
+    <p>
+      Social Publisher is a web tool that helps users connect social media accounts and upload video
+      content using official platform APIs and OAuth-based authorization.
+    </p>
+
+    <h2>Available Pages</h2>
+    <ul>
+      <li>Terms of Service</li>
+      <li>Privacy Policy</li>
+    </ul>
+
+    <div class="actions">
+      <a class="button" href="./terms/">Terms of Service</a>
+      <a class="button secondary" href="./privacy/">Privacy Policy</a>
+    </div>
+  </main>
+</body>
+</html>
